@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--- JQuery --->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <!--- Sematic-UI --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="style.css" >
+
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <!--- Vue --->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
+  <!--- /Vue --->
+
+
+  <title>Nykot</title>
+  </head>
+  <body class="">
+<div class="ui container">
+
+</div>
+<div class="ui container">
+
+</div>
+<div class="ui container">
+  <div class="container">
+
+</tbody></table>
+<div class="ui internally celled grid">
+  <div class="row">
+    <div class="three wide column">
+      <p>
+        <p>Desenvolvedor JS, com enfase em analise de dados, apaixonado por tecnologia e computadores, desde o hardware ao software.</p>
+        <p>Site feito com <a href="https://semantic-ui.com/">Semantic-UI</a> e <a href="https://vuejs.org/">VueJS</a>.</p>
+      </p>
+    </div>
+    <div class="ten wide column">
+      <a href="https://twitter.com/itsnykot"><button class="ui twitter icon button" name="button"><i class="twitter icon"></i>
+      </button></a>
+      <a href="https://instagram.com/itsnykot"><button class="ui instagram icon button" name="button"><i class="instagram icon"></i>
+      </button></a>
+      <a href="https://www.linkedin.com/in/rodrigo-lessa-9b2394192/"><button class="ui linkedin icon button" name="button"><i class="linkedin icon"></i>
+      </button></a>
+      <a href="https://twitch.com/nykot"><button class="ui purple twitch icon button" name="button"><i class="twitch icon"></i>
+      </button></a>
+      <a href="https://github.com/rodlessa"><button class="ui blue github icon button" name="button"><i class="github icon"></i>
+      </button></a>
+
+      <table class="ui definition table">
+      <tbody>
+        <tr>
+          <td >Nano</td>
+          <td id="nano">nano_1u55suaiojki8hj5kgtein4k5ndw17r45ty766puzjjxw6z7uw1atrzwz4fo <i type="button"  class="external alternate icon" onclick="shownano();" value="" /></td>
+            <div class="ui mini modal shownano">
+              <div class="ui icon header">
+              </div>
+              <div class="content">
+                <p id=nanoQR class="qrcodes">
+                <script type="text/javascript">
+                  new QRCode(document.getElementById("nanoQR"), nano);
+                </script>
+                </p>
+              </div>
+              <div class="actions">
+                <div class="ui green ok inverted button">
+                  ok
+                </div>
+              </div>
+              </div>
+        </tr>
+        <tr>
+          <td>BSC:</td>
+          <td id="bsc">0x3d71311D333594DBFD64d2f0D1A3b5Dd46569fC3 <i type="button"  class="external alternate icon" onclick="showbsc();" value="" /></td>
+          <div class="ui mini modal bscqr">
+            <div class="ui icon header">
+            </div>
+            <div class="content ">
+              <p id=bscQR class="qrcodes" >
+              <script type="text/javascript">
+                new QRCode(document.getElementById("bscQR"), bsc);
+              </script></p>
+            </div>
+            <div class="actions">
+              <div class="ui green ok inverted button">
+                ok
+              </div>
+            </div>
+            </div>
+        </tr>
+        <tr>
+          <td>BTC:</td>
+          <td id="btc">1BWiGQXapZYG9qYi7ZXQKYKa8RDbMgGVVN <i type="button"  class="external alternate icon" onclick="showbtc();" value="" /></td>
+            <div class="ui mini modal btcqr">
+              <div class="ui icon header">
+              </div>
+              <div class="content">
+                <p id=btcQR class="qrcodes">
+                <script type="text/javascript">
+                  new QRCode(document.getElementById("btcQR"), btc);
+                </script></p>
+              </div>
+              <div class="actions">
+                <div class="ui green ok inverted button">
+                  ok
+                </div>
+              </div>
+              </div>
+        </tr>
+        <tr>
+          <td>Polygon-wETH/Matic:</td>
+          <td id="polygon">0x3d71311D333594DBFD64d2f0D1A3b5Dd46569fC3
+            <i type="button"  class="external alternate icon" onclick="showPoly();" value="" />
+
+
+                  <div class="ui mini modal polyQR">
+                    <div class="ui icon header">
+                    </div>
+                    <div class="content ">
+                      <p id=polyQR class="qrcodes">
+                      <script type="text/javascript">
+                        new QRCode(document.getElementById("polyQR"), matic);
+                      </script></p>
+                    </div>
+                    <div class="actions">
+                      <div class="ui green ok inverted button">
+                        ok
+                      </div>
+                    </div>
+                    </div>
+
+            </td>
+        </tr>
+    </div>
+    <div class="three wide column">
+      <img>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+  </body>
+
+<script type="text/javascript" src="script.js"></script>
+<!--- Script.js ---->
+</html>
