@@ -1,6 +1,9 @@
 window.onload = function(){
   myFunction();
 }
+window.onload = function(){
+  calcf();
+}
 
 function myFunction(){
 
@@ -16,8 +19,8 @@ function myFunction(){
 
 
 
-    var invest = document.getElementById("invest").value;
-    var valor = document.getElementById("uvalue").value;
+    var invest = +document.getElementById("invest").value;
+    var valor = +document.getElementById("uvalue").value;
     //var vper = 8.24;
     var start = 0.2458;
     var total = invest * valor;
@@ -26,5 +29,36 @@ function myFunction(){
     document.getElementById('vpr').innerHTML = "Total: "+ total.toFixed(2) + "<br> Total BRL: " + totalbrl.toFixed(2);
 
     }
+
+}
+
+
+
+function calcf (){
+  var startlp = +document.getElementById("startlp").value;
+  var dapy = +document.getElementById("dapy").value;
+  a=startlp;
+  b=dapy/100;
+  console.log(a,b);
+for (var i = 0; i < 1; i++) {
+  c=a*b;
+  a=a+c;
+  console.log(a);
+  document.getElementById('result-1').innerHTML = "1 day total: "+ a.toFixed(2) + " LP";
+}
+for (var i = 0; i < 7; i++) {
+  c=a*b;
+  a=a+c;
+  console.log(a);
+  document.getElementById('result-7').innerHTML = "7 days total: "+ a.toFixed(2) + " LP";
+}
+for (var i = 0; i < 30; i++) {
+  c=a*b;
+  a=a+c;
+  console.log(a);
+  document.getElementById('result-30').innerHTML = "30 days total: "+ a.toFixed(2) + " LP";
+}
+
+
 
 }
