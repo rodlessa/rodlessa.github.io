@@ -45,19 +45,19 @@ for (var i = 0; i < 1; i++) {
   a=a+c;
   console.log(a);
   document.getElementById('result-1').innerHTML = "1 day total: "+ a.toFixed(2) + " LP";
-}
+  }
 for (var i = 0; i < 7; i++) {
   c=a*b;
   a=a+c;
   console.log(a);
   document.getElementById('result-7').innerHTML = "7 days total: "+ a.toFixed(2) + " LP";
-}
+  }
 for (var i = 0; i < 30; i++) {
   c=a*b;
   a=a+c;
   console.log(a);
   document.getElementById('result-30').innerHTML = "30 days total: "+ a.toFixed(2) + " LP";
-}
+  }
 
 
 
