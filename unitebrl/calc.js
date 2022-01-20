@@ -42,17 +42,17 @@ function calcu (){
 for (var i = 0; i < 1; i++) {
   c=a*b;
   a=a+c;
-  document.getElementById('result-u1').innerHTML = "1 day total: "+ a.toFixed(2) + " LP";
+  document.getElementById('result-u1').innerHTML = "1 day total: "+ a.toFixed(2) + " USHARE";
   }
 for (var i = 0; i < 7; i++) {
   c=a*b;
   a=a+c;
-  document.getElementById('result-u7').innerHTML = "7 days total: "+ a.toFixed(2) + " LP";
+  document.getElementById('result-u7').innerHTML = "7 days total: "+ a.toFixed(2) + " USHARE";
   }
 for (var i = 0; i < 30; i++) {
   c=a*b;
   a=a+c;
-document.getElementById('result-u30').innerHTML = "30 days total: "+ a.toFixed(2) + " LP";
+document.getElementById('result-u30').innerHTML = "30 days total: "+ a.toFixed(2) + " USHARE";
   }
 }
 
