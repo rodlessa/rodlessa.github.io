@@ -4,7 +4,7 @@ window.onload = function(){
 window.onload = function(){
   calcf();
 }
-
+/*
 function myFunction(){
 
   var requestURL = 'https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=brl';
@@ -31,7 +31,30 @@ function myFunction(){
     }
 
 }
+*/
 
+function calcu (){
+  var startulp = +document.getElementById("startulp").value;
+  var duapy = +document.getElementById("duapy").value;
+  a=startulp;
+  b=duapy/365;
+  b=b/100;
+for (var i = 0; i < 1; i++) {
+  c=a*b;
+  a=a+c;
+  document.getElementById('result-u1').innerHTML = "1 day total: "+ a.toFixed(2) + " LP";
+  }
+for (var i = 0; i < 7; i++) {
+  c=a*b;
+  a=a+c;
+  document.getElementById('result-u7').innerHTML = "7 days total: "+ a.toFixed(2) + " LP";
+  }
+for (var i = 0; i < 30; i++) {
+  c=a*b;
+  a=a+c;
+document.getElementById('result-u30').innerHTML = "30 days total: "+ a.toFixed(2) + " LP";
+  }
+}
 
 
 function calcf (){
@@ -39,23 +62,19 @@ function calcf (){
   var dapy = +document.getElementById("dapy").value;
   a=startlp;
   b=dapy/100;
-  console.log(a,b);
 for (var i = 0; i < 1; i++) {
   c=a*b;
   a=a+c;
-  console.log(a);
   document.getElementById('result-1').innerHTML = "1 day total: "+ a.toFixed(2) + " LP";
   }
 for (var i = 0; i < 7; i++) {
   c=a*b;
   a=a+c;
-  console.log(a);
   document.getElementById('result-7').innerHTML = "7 days total: "+ a.toFixed(2) + " LP";
   }
 for (var i = 0; i < 30; i++) {
   c=a*b;
   a=a+c;
-  console.log(a);
   document.getElementById('result-30').innerHTML = "30 days total: "+ a.toFixed(2) + " LP";
   }
 
