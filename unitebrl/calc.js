@@ -61,7 +61,6 @@ function calcf (){
   var startlp = +document.getElementById("startlp").value;
   var dapy = +document.getElementById("dapy").value;
   a=startlp;
-  b=dapy/365;
   b=dapy/100;
 for (var i = 0; i < 1; i++) {
   c=a*b;
