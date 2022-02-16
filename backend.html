@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<link rel="stylesheet" href="style.css">
+    <title>RodLessa</title>
+  </head>
+  <body>
+    <div class="ui hidden divider"></div>
+    <div class="ui menu container grid">
+    <a class="item" href="index.html"><i class="home icon"></i>Home</a>
+  <a class="header item" href="backend.html">
+    Backend
+  </a>
+  <a class="item" href="https://github.com/rodlessa">
+    <i class="github icon"></i>Github
+  </a>
+</div>
+
+<div class="ui container raised segment grid">
+  <div class="ui hidden divider"></div>
+  <h2><p>Temperatura</p></h2>
+    <p>Usando api do <a href="openweathermap.org">openweathermap.org</a>, extraindo com <code>fetch()</code>,
+    <code>data.weather[0]['description']</code>, para extração da descrição, <code>data.main.temp</code>,<code>data.main.temp_min</code>,<code>data.main.temp_max</code>, para os dados de temperatura, minima e maxima.</p>
+    <div class="ui hidden divider"></div>
+    <div class="ui grid container">
+      <div class="ui input">
+        <input type="text"  id="search_city" placeholder="Cidade">
+      </div>
+      <button type="button" class="ui button primary" name="button" id="searchbtn" ><i class="search icon"></i>Buscar</button>
+
+    </div>
+  <div class="ui grid container">
+  <div class="ui four divided column grid">
+    <div class="four wide column"><p id="icon"></p></div>
+    <div class="four wide column">
+      <h2><p id="city"></p></h2>
+      <h3><p id="description"></p></h3>
+      <h3><p id="temps"></p></h3>
+  </div>
+  <div class="four wide column">
+    <h4><p id="max"></p></h4>
+    <h4><p id="min"></p></h4>
+  </div>
+  </div>
+  </div>
+
+</div>
+<div class="ui hidden divider"></div>
+<div class="ui hidden divider"></div>
+
+    <script src="script.js" charset="utf-8"></script>
+    <script src="weather.js" charset="utf-8"></script>
+  </body>
+</html>

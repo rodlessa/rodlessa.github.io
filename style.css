@@ -1,17 +1,8 @@
-.menu-size {
-  display: flex;
-  justify-content: center;
+body{
+  background: rgb(73,73,212);
+  background: linear-gradient(90deg, rgba(73,73,212,1) 35%, rgba(0,212,255,1) 100%);
+  padding: 1em;
+}
+.botmenu{
   margin-top: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-.spacing-links{
-  padding-top: 5px;
-  padding-left: 5px;
-  margin: 5px;
-}
-.qrcodes{
-display: flex;
-justify-content: center;
-text-align: center;
 }
