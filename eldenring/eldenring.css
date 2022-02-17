@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap');
+body{
+  background-image: url("https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png");
+  background-size: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#timer{
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 30pt;
+
+}
+#my-container {
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+}
